@@ -20,13 +20,13 @@ You can create fenced code blocks by placing triple backticks ``` before and aft
       def perimeter(self):
            return 2*self.radius*3.14 
  ```
- 
- ### Mathematical Expressions
- 
+
+### Mathematical Expressions
+
  GitHub supports LaTeX formatted math within Markdown, it uses the corss-browser JavaScript library MathJax for rendering. Here is a mathematical expression for Binomial
  coefficients:
- 
-$$ 
+
+$$
 \  \binom{n}{k} = \frac{n!}{k!(n-k)!}  \
 $$
 
@@ -60,6 +60,7 @@ classDiagram
         +run()
     }
 ```
+
 And here is a sequence diagram:
 
 [^2]: [Marmaid diagramming and charting tool](https://mermaid.js.org/)

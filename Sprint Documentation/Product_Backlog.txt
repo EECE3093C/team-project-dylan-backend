@@ -1,0 +1,7 @@
+Backend
+- Write 50/30/20 savings calculator
+- Write projected semester income calculator
+- Write estimated cost of living calculator
+
+Frontend
+- Create basic web structure

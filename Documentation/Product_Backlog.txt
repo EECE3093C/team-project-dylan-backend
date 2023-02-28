@@ -4,6 +4,8 @@ Backend
 - Write estimated cost of living calculator
 - Fetch cost of living data based on city, state
 - Fetch income tax data based on state
+- Define and create backend classes
+- Figure out file structure (what code to have in what files)
 
 Frontend
 - Create basic web structure

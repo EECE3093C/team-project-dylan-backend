@@ -13,8 +13,9 @@ import getDataFromWeb
 import time
 
 class Student():
-    def __init__(self, rate, weeks):
+    def __init__(self, rate, hoursPerWeek, weeks):
         self.rate = rate
+        self.hoursPerWeek = hoursPerWeek
         self.weeks = weeks
     
     def getData(self):
@@ -23,7 +24,10 @@ class Student():
     
     def getSemesterIncome(self):
         # Semester income calculator
-        return
+        x = self.rate
+        y = self.hoursPerWeek
+        z = self.weeks
+        return (x*y)*z
     
     def getYearlyIncome(self):
         # Calculate yearly income

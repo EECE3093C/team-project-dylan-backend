@@ -10,6 +10,7 @@
 - Figure out file structure (what code to have in what files)
 - Selenium to grab data from website
 - Create class diagrams
+- Set up GitHub action to install pip dependencies
 
 ### Frontend
 - Create basic web structure

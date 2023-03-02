@@ -7,7 +7,7 @@
 #
 # Description: 
 #
-# Main file to execute financial tool backend code
+# 
 
 from selenium import webdriver
 from webbrowser import Chrome

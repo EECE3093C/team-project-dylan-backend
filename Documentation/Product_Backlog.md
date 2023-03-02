@@ -1,4 +1,6 @@
-Backend
+# Backlog
+
+### Backend
 - Write 50/30/20 savings calculator
 - Write projected semester income calculator
 - Write estimated cost of living calculator
@@ -9,7 +11,7 @@ Backend
 - Selenium to grab data from website
 - Create class diagrams
 
-Frontend
+### Frontend
 - Create basic web structure
 - Research Flask for embedding Python code in website
 - Define classes

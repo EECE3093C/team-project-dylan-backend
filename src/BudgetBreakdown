@@ -1,0 +1,23 @@
+###############################################################################
+#                         EECE 3093C, Spring 2023
+#                            Project Cache Cab
+#                               Team Dylan
+#                        University of Cincinnati
+###############################################################################
+#
+# Description: 
+#
+# This file will hold the code for our budgeting tools.
+# I'm not sure if this is how we want to do it, but here is a simple starting code for the 50/30/20 rule. 
+
+# get user's income
+income = float(input("Enter your monthly income: "))
+
+# calculate savings amounts based on the 50/30/20 rule
+savings = income * 0.20
+needs = income * 0.50
+wants = income * 0.30
+
+# display results in the order of needs, wants, and savings
+print(f"Based on the 50/30/20 rule, you should spend ${needs:.2f} on needs, spend ${wants:.2f} on wants, and save ${savings:.2f}.")
+

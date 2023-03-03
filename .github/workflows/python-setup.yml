@@ -1,4 +1,4 @@
-name: python-test
+name: python-setup
 
 on: [push]
 
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest #may need to change when code is hosted
     strategy:
       matrix:
-        python-version: ["3.10", "3.11"]
+        python-version: ["3.11"]
     
     steps:
       - run: echo "hello"

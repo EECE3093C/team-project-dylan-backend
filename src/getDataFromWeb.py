@@ -22,10 +22,16 @@ import os
 Path = os.getcwd()
 driver = webdriver.Chrome(Path + "/Documents/chromedriver.exe")
 
-time.sleep(5)
 ct = input("\nEnter the state that you live in: ")
+driver.get("https://www.experian.com/blogs/ask-experian/research/median-rental-rates-for-an-apartment-by-state/")
+time.sleep(2)
+x = 1
+for i in range(51):
+    stateFind = driver.find_element(By.XPATH, "//*[@id='postBlk']/div/div/div/div/table/tbody/tr[" + f'{x}' + "]/td[1]")
+    stateName = stateFind.get_attribute('innerHTML')
+    if (stateName == ct):
+        findMonthlyRent = driver.find_element(By.XPATH, "//*[@id='postBlk']/div/div/div/div/table/tbody/tr[" + f'{x}' + "]/td[2]")
+        monthlyRent = findMonthlyRent.get_attribute('innerHTML')
+        print('The monthly rent in ' + ct + ' is ' + monthlyRent + '.')
+    x = x+1
 time.sleep(5)
-driver.get("https://www.google.com")
-searchbox = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.XPATH, "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")))
-inputsearch = driver.find_element(By.XPATH, "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input").send_keys("Average Living Costs in " + ct + "\n")
-time.sleep(20)

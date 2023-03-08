@@ -29,6 +29,13 @@ class Student():
         z = self.weeks
         return (x*y)*z
     
+    def getSemesterEarnings(self):
+        x = self.getSemesterIncome() #gets income without cost of living or taxes taken out
+        y = getDataFromWeb.getTaxPercent() #PLACEHOLDER FUNCTION. gets percent of income is taxes
+        xy = x-(x*y) #calculates earnings with taxes taken out
+        z = getDataFromWeb.getSemesterRent() #PLACEHOLDER FUNCTION. gets total rent for the semester
+        return xy-z
+    
     def getYearlyIncome(self):
         # Calculate yearly income
         return
@@ -36,9 +43,5 @@ class Student():
     def getBudgetBreakdown(self):
         # 50/30/20 calculator
         return
-
-s = Student(20, 15)
-
-print(s.getSemesterIncome())
 
 #Interface with web, send data
